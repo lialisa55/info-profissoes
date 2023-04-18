@@ -11,13 +11,13 @@ const Tab = createBottomTabNavigator();
 
 export default function Rotasnavbar() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator initialRouteName="JuniorTi" screenOptions={{headerShown:false}}>
       <Tab.Screen
         name="Junior"
         component={JuniorTi}
-        options={{
-          tabBarIcons: ({ color, size }) => (
-            <AntDesign name="codesquareo" size={24} color="white" />
+          options={{
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name="codesquareo" size={24} color={"black"} />
           ),
         }}
       />
@@ -25,8 +25,8 @@ export default function Rotasnavbar() {
         name="Pleno"
         component={PlenoTi}
         options={{
-          tabBarIcons: ({ color, size }) => (
-            <AntDesign name="codesquareo" size={24} color="white" />
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name="codesquareo" size={24} color="black" />
           ),
         }}
       />
@@ -34,8 +34,8 @@ export default function Rotasnavbar() {
         name="Senior"
         component={SeniorTi}
         options={{
-          tabBarIcons: ({ color, size }) => (
-            <AntDesign name="codesquareo" size={24} color="white" />
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name="codesquareo" size={24} color="black" />
           ),
         }}
       />
